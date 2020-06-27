@@ -1,0 +1,62 @@
+{
+  "name": "Create React App Sample",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html"
+  }
+}
+
+
+直下の.envに↓を書いてnpm run buildすると
+build/index.htmlから外部スクリプトとして、各種JavaScriptファイルを読み込むよう
+
+INLINE_RUNTIME_CHUNK=false
+
+
+
+{
+    "manifest_version": 2,
+    "version": "1.0",
+    "name": "My Chrome Extension Sample",
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "description": "ReactでChrome拡張機能を作ってみる",
+    "browser_action": {
+      "default_icon": {
+        "16": "icon16.png",
+        "24": "icon24.png",
+        "32": "icon32.png"
+      },
+      "default_title": "react extension",
+      "default_popup": "index.html"
+    }
+}
+
+
+
+
+
+
+{
+    "name": "Miu-Miu",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "description": "Test for Hakkason GW in 2020",
+    "icons": {
+      "16": "images/icon/top-logo-hand.png"
+    },
+    "browser_action":{
+      "default_icon":{
+          "16": "images/icon/top-logo-hand.png"
+      },
+      "default_title": "インスタントメモ帳",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+      "storage"
+    ]
+  }

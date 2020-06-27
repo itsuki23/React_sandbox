@@ -1,0 +1,46 @@
+.box {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 592px;
+    max-width: 432px;
+    padding: 0 1rem;
+    width: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    font-size: large;
+}
+
+
+.tab-body {
+    height: 500px;
+    width: 100vw;
+    position: fixed;
+    bottom: -500px;
+    /* border-top: 1px solid rgba(0,0,0,0.3); */
+    box-sizing: border-box;
+    background-color: burlywood;
+    z-index: 10;
+
+}   .tab-body.open { bottom: 0; }
+
+.tab {
+    height: 30px;
+    width: 100px;
+    position: fixed;
+    bottom: 0;
+    left: 50px;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    border-left: 1px solid rgba(0,0,0,0.3);
+    border-right: 1px solid rgba(0,0,0,0.3);
+    box-sizing: border-box;
+    background-color: burlywood;
+    z-index: 99;
+}   .tab.open { bottom: 500px; }
