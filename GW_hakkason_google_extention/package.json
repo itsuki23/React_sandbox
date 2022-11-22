@@ -14,7 +14,7 @@
     "react-draggable": "^4.3.1",
     "react-dropzone": "^11.0.1",
     "react-rnd": "^10.1.9",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-tabs": "^3.1.0"
   },
   "scripts": {
